@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <link rel="stylesheet" href="../estilos/styles-subscribe.css">
+</head> 
+
+<body>
+
+    <header>
+        <h1><a href=homepage.html>ariana grande</a></h1>
+        <nav>
+            <ul>
+                <li><a href="discography.html">discography</a></li>
+                <li><a href="subscribe.html">subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="subscribe-container">
+        <div class="subscribe">
+            <h1>subscribe to my newsletter!</h1>
+            <p>stay updated with our latest content and news.</p>
+            <div class="textbox">
+                <label for="name">name</label>
+                <input type="name" id="name" placeholder="your name">
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="your email">
+            </div>
+            <div class="checkboxes">
+                <p>receive email updates from:</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="ariana-checkbox">
+                    <label for="ariana-checkbox" class="checkbox-label">ariana grande</label>
+                    <input type="checkbox" id="republic-checkbox">
+                    <label for="republic-checkbox" class="checkbox-label">republic records</label>
+                </div>
+            </div>
+            <button id="subscribeBtn" type="button" onclick="showThankYouMessage()">subscribe</button>
+            <div id="thankYouMessage" style="display: none;">Thank you for subscribing!</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="follow-me">
+            <a href="https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=f5cae1f7da2c4156" target="_blank">
+                <img src="../ficheiros/spotify black.svg" alt="spotify logo">
+            </a>
+            
+            <a href="https://music.apple.com/us/artist/ariana-grande/412778295" target="_blank">
+                <img src="../ficheiros/apple-music black.svg" alt="apple music logo">
+            </a>
+    
+            <a href="https://www.youtube.com/@ArianaGrande" target="_blank">
+                <img src="../ficheiros/youtube black.svg" alt="youtube logo">
+            </a>
+    
+            <a href="https://www.instagram.com/arianagrande/?hl=pt" target="_blank">
+                <img src="../ficheiros/insta black.svg" alt="instagram logo">
+            </a>
+    
+            <a href="https://www.facebook.com/arianagrande/?locale=pt_PT" target="_blank">
+                <img src="../ficheiros/facebook black.svg" alt="facebook logo">
+            </a>
+    
+            <a href="https://www.tiktok.com/@arianagrande" target="_blank">
+                <img src="../ficheiros/tiktok black.svg" alt="tiktok logo">
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        function showThankYouMessage() {
+            var thankYouMessage = document.getElementById('thankYouMessage');
+            thankYouMessage.style.display = 'block';
+            resetForm();
+        }
+
+        function resetForm() {
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('ariana-checkbox').checked = false;
+            document.getElementById('republic-checkbox').checked = false;
+        }
+
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+                document.querySelector('header').classList.add('hidden');
+            } else {
+                document.querySelector('header').classList.remove('hidden');
+            }
+            lastScrollTop = st;
+        });
+    </script>
+
+</body>
+</html>

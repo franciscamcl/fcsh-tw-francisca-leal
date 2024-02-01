@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <link rel="stylesheet" href="../estilos/styles-homepage.css">
+</head> 
+
+<body>
+
+    <header>
+        <h1><a href=homepage.html>ariana grande</a></h1>
+        <nav>
+            <ul>
+                <li><a href="discography.html">discography</a></li>
+                <li><a href="subscribe.html">subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="homepage">
+      <div class="homepage-container">
+        <div class="left">
+          <h1>listen to ariana's latest single</h1>
+          <p>
+            yes, and? is my first single of my album Eternal Sunshine
+          </p>
+          <button>
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4&pp=ygUHeWVzIGFuZA%3D%3D" target="_blank">
+                stream
+            </a>
+          </button>
+          </div>
+        <div class="right">
+            <img
+            src="../ficheiros/yes and.webp"
+            alt="yes,and? album cover"
+            class="album-image"/>
+        </div>
+    </section>
+
+    <section class="spotify-playlist">
+        <h1>stream all her songs</h1>
+        <iframe style="border-radius:1rem" src="https://open.spotify.com/embed/playlist/2UrZudVtKmKk9c2hqrj155?utm_source=generator" width="100%" height="410" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="follow-me">
+            <a href="https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=f5cae1f7da2c4156" target="_blank">
+                <img src="../ficheiros/spotify black.svg">
+            </a>
+            
+            <a href="https://music.apple.com/us/artist/ariana-grande/412778295" target="_blank">
+                <img src="../ficheiros/apple-music black.svg">
+            </a>
+
+            <a href="https://www.youtube.com/@ArianaGrande" target="_blank">
+                <img src="../ficheiros/youtube black.svg">
+            </a>
+
+            <a href="https://www.instagram.com/arianagrande/?hl=pt" target="_blank">
+                <img src="../ficheiros/insta black.svg">
+            </a>
+
+            <a href="https://www.facebook.com/arianagrande/?locale=pt_PT" target="_blank">
+                <img src="../ficheiros/facebook black.svg">
+            </a>
+
+            <a href="https://www.tiktok.com/@arianagrande" target="_blank">
+                <img src="../ficheiros/tiktok black.svg">
+            </a>
+        </div>
+    </footer>
+
+<script>
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > lastScrollTop) {
+            document.querySelector('header').classList.add('hidden');
+        } else {
+            document.querySelector('header').classList.remove('hidden');
+        }
+        lastScrollTop = st;
+    });
+</script>
+
+</body>
+</html>

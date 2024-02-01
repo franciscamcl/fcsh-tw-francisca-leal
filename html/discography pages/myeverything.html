@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <link rel="stylesheet" href="../../estilos/discos/myeverything.css">
+</head> 
+
+<body>
+
+    <header>
+        <a href="../discography.html" class="back-arrow">&#x27F5;</a>
+    </header>
+
+    <section class="myeverything">
+        <div class="myeverything-container">
+            <div class="left">
+            <img src="../../ficheiros/my everything album cover.jpg" alt="My Everything Cover" class="album-cover">
+            <h1>my everything</h1>
+            <button><a href="https://open.spotify.com/intl-pt/album/6EVYTRG1drKdO8OnIQBeEj?si=fc59691a0a88439f" target="blank">Listen on Spotify</a></button>
+            </div>
+            <div class="right">
+                <div class="tracklist">
+                    <h1>Tracklist</h1>
+                    <ol class="tracklist">
+                        <li>Intro</li>
+                        <li>Problem (with Iggy Azalea)</li>
+                        <li>One Last Time</li>
+                        <li>Why Try</li>
+                        <li>Break Free (with Zedd)</li>
+                        <li>Best Mistake (with Big Sean)</li>
+                        <li>Be My Baby (with Cashmere Cat)</li>
+                        <li>Break Your Heart Right Back (Childish Gambino)</li>
+                        <li>Love Me Harder (with The Weeknd)</li>
+                        <li>Just A Little Bit Of Your Heart</li>
+                        <li>Hands On Me (with A$AP Ferg)</li>
+                        <li>My Everything</li>
+                        <li>Bang Bang (with Jessie J & Nicki Minaj)</li>
+                        <li>Only 1</li>
+                        <li>You Don't Know Me</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="follow-me">
+            <a href="https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=f5cae1f7da2c4156" target="_blank">
+                <img src="../../ficheiros/spotify black.svg" alt="spotify logo">
+            </a>
+            
+            <a href="https://music.apple.com/us/artist/ariana-grande/412778295" target="_blank">
+                <img src="../../ficheiros/apple-music black.svg" alt="apple music logo">
+            </a>
+    
+            <a href="https://www.youtube.com/@ArianaGrande" target="_blank">
+                <img src="../../ficheiros/youtube black.svg" alt="youtube logo">
+            </a>
+    
+            <a href="https://www.instagram.com/arianagrande/?hl=pt" target="_blank">
+                <img src="../../ficheiros/insta black.svg" alt="instagram logo">
+            </a>
+    
+            <a href="https://www.facebook.com/arianagrande/?locale=pt_PT" target="_blank">
+                <img src="../../ficheiros/facebook black.svg" alt="facebook logo">
+            </a>
+    
+            <a href="https://www.tiktok.com/@arianagrande" target="_blank">
+                <img src="../../ficheiros/tiktok black.svg" alt="tiktok logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+                document.querySelector('header').classList.add('hidden');
+            } else {
+                document.querySelector('header').classList.remove('hidden');
+            }
+            lastScrollTop = st;
+        });
+    </script>
+
+</body>
+</html>
+

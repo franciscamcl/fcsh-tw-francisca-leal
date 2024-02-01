@@ -1,0 +1,70 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-left: 15px;
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-size: 2rem;
+}
+
+.back-arrow:hover {
+    color: #ded0ba;
+}
+
+header.hidden {
+    transform: translateY(-50px); 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c82828;
+}
+
+.eternalsunshine {
+    color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+}
+
+.album-cover {
+    width: 14rem;
+    height: auto;
+    margin-left: 35px;
+}
+
+.eternalsunshine h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-left: 35px;
+}
+
+.eternalsunshine p{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.footer {
+    background-color: #fbfbfb;
+    text-align: center;
+    position:static;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer img {
+    height: 25px;
+    margin: 10px;
+}

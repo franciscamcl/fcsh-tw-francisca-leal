@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <link rel="stylesheet" href="../../estilos/discos/positions.css">
+</head> 
+
+<body>
+
+    <header>
+        <a href="../discography.html" class="back-arrow">&#x27F5;</a>
+    </header>
+
+    <section class="positions">
+        <div class="positions-container">
+            <div class="left">
+            <img src="../../ficheiros/positionspage.jpg" alt="Positions" class="album-cover">
+            <h1>positions</h1>
+            <button><a href="https://open.spotify.com/intl-pt/album/74vajFwEwXJ61OW1DKSPEa?si=5574dfac704a4eea" target="blank">Listen on Spotify</a></button>
+            </div>
+            <div class="right">
+                <div class="tracklist">
+                    <h1>Tracklist</h1>
+                    <ol class="tracklist">
+                        <li>shut up</li>
+                        <li>34+35</li>
+                        <li>motive (with Doja Cat)</li>
+                        <li>just like magic</li>
+                        <li>off the table (with The Weeknd)</li>
+                        <li>six thirty</li>
+                        <li>safety net (feat. Ty Dolla $ign)</li>
+                        <li>my hair</li>
+                        <li>nasty</li>
+                        <li>west side</li>
+                        <li>love language</li>
+                        <li>positions</li>
+                        <li>obvious</li>
+                        <li>pov</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="follow-me">
+            <a href="https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=f5cae1f7da2c4156" target="_blank">
+                <img src="../../ficheiros/spotify black.svg" alt="spotify logo">
+            </a>
+            
+            <a href="https://music.apple.com/us/artist/ariana-grande/412778295" target="_blank">
+                <img src="../../ficheiros/apple-music black.svg" alt="apple music logo">
+            </a>
+    
+            <a href="https://www.youtube.com/@ArianaGrande" target="_blank">
+                <img src="../../ficheiros/youtube black.svg" alt="youtube logo">
+            </a>
+    
+            <a href="https://www.instagram.com/arianagrande/?hl=pt" target="_blank">
+                <img src="../../ficheiros/insta black.svg" alt="instagram logo">
+            </a>
+    
+            <a href="https://www.facebook.com/arianagrande/?locale=pt_PT" target="_blank">
+                <img src="../../ficheiros/facebook black.svg" alt="facebook logo">
+            </a>
+    
+            <a href="https://www.tiktok.com/@arianagrande" target="_blank">
+                <img src="../../ficheiros/tiktok black.svg" alt="tiktok logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+                document.querySelector('header').classList.add('hidden');
+            } else {
+                document.querySelector('header').classList.remove('hidden');
+            }
+            lastScrollTop = st;
+        });
+    </script>
+
+</body>
+</html>
+

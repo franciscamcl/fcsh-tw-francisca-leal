@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <link rel="stylesheet" href="../../estilos/discos/yt10.css">
+</head> 
+
+<body>
+
+    <header>
+        <a href="../discography.html" class="back-arrow">&#x27F5;</a>
+    </header>
+
+    <section class="yt10">
+        <div class="yt10-container">
+            <div class="left">
+            <img src="../../ficheiros/yours truly 10.jpg" alt="Yours Truly 10 Year Anniversary Cover" class="album-cover">
+            <h1>yours truly (tenth anniversary edition)</h1>
+            <button><a href="https://open.spotify.com/intl-pt/album/2VSBGJ8bUuNgmOYXHIQagM?si=562aeb9b498f4829" target="blank">Listen on Spotify</a></button>
+            </div>
+            <div class="right">
+                <div class="tracklist">
+                    <h1>Tracklist</h1>
+                    <ol class="tracklist">
+                        <li>Honeymoon Avenue</li>
+                        <li>Baby I</li>
+                        <li>Right There (with Big Sean)</li>
+                        <li>Tattoed Heart</li>
+                        <li>Lovin' It</li>
+                        <li>Piano</li>
+                        <li>Daydreamin'</li>
+                        <li>The Way (feat. Mac Miller)</li>
+                        <li>You'll Never Know</li>
+                        <li>Almost Is Never Enough (with Nathan Sykes)</li>
+                        <li>Popular Song (MIKA & Ariana Grande)</li>
+                        <li>Better Left Unsaid</li>
+                        <li>The Way - Spanglish Version (feat. Mac Miller)</li>
+                        <li>Honeymoon Avenue - Live from London</li>
+                        <li>Daydreamin' - Live from London</li>
+                        <li>Baby I - Live from London</li>
+                        <li>Tattooed Heart - Live from London</li>
+                        <li>Right There - Live from London (feat. Big Sean)</li>
+                        <li>The Way - Live from London (feat. Mac Miller)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="follow-me">
+            <a href="https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=f5cae1f7da2c4156" target="_blank">
+                <img src="../../ficheiros/spotify black.svg" alt="spotify logo">
+            </a>
+            
+            <a href="https://music.apple.com/us/artist/ariana-grande/412778295" target="_blank">
+                <img src="../../ficheiros/apple-music black.svg" alt="apple music logo">
+            </a>
+    
+            <a href="https://www.youtube.com/@ArianaGrande" target="_blank">
+                <img src="../../ficheiros/youtube black.svg" alt="youtube logo">
+            </a>
+    
+            <a href="https://www.instagram.com/arianagrande/?hl=pt" target="_blank">
+                <img src="../../ficheiros/insta black.svg" alt="instagram logo">
+            </a>
+    
+            <a href="https://www.facebook.com/arianagrande/?locale=pt_PT" target="_blank">
+                <img src="../../ficheiros/facebook black.svg" alt="facebook logo">
+            </a>
+    
+            <a href="https://www.tiktok.com/@arianagrande" target="_blank">
+                <img src="../../ficheiros/tiktok black.svg" alt="tiktok logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+                document.querySelector('header').classList.add('hidden');
+            } else {
+                document.querySelector('header').classList.remove('hidden');
+            }
+            lastScrollTop = st;
+        });
+    </script>
+
+</body>
+</html>

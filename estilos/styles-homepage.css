@@ -1,0 +1,148 @@
+header {
+    background-color: #C82828;
+    padding-left: 30px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 40px;
+    z-index: 1;   
+    transition: -webkit-transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-50px); 
+} 
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;;
+    background-color: #C82828;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color:#ded0ba;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  padding-right: 30px;
+  }
+
+
+section {
+    position: relative;
+}  
+
+.homepage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fbfbfb;
+    padding: 0rem 2rem;
+  }
+  
+  .left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  
+  .left p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: #fbfbfb;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  button a{
+    text-decoration: none;
+    color:#C82828;
+  }
+  button:hover {
+    background: #ded0ba;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+  
+  .album-image {
+    width: 100%;
+    height: auto;
+  }
+
+.spotify-playlist  {
+    margin-top: 80px;
+    position: relative;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fbfbfb;
+}
+
+.spotify-playlist h1{
+    padding: 1rem;
+    color:#C82828;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.footer {
+    background-color: #fbfbfb;
+    text-align: center;
+    position:static;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer img {
+    height: 25px;
+    margin: 10px;
+}
+
+.follow-me {
+    margin: 5px;
+    max-width: 400px;
+    margin: auto;
+}

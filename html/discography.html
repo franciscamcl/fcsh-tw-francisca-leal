@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <link rel="stylesheet" href="../estilos/styles-discography.css">
+</head> 
+
+<body>
+
+    <header>
+        <h1><a href=homepage.html>ariana grande</a></h1>
+        <nav>
+            <ul>
+                <li><a href="discography.html">discography</a></li>
+                <li><a href="subscribe.html">subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="vinyl-container">
+            <div class="row-1">
+                    
+                <a href="../html/discography pages/eternalsunshine.html">
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/eternal sunshine album.jpg" alt="Eternal Sunshine" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../html/discography pages/yt10.html">   
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/yours truly 10.jpg" alt="Yours Truly 10" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="../html/discography pages/positions.html">
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/positions.jpg" alt="Positions" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../html/discography pages/tun.html">
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/tun.jpg" alt="Thank you Next" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="row-2">
+                <a href="../html/discography pages/sweetener.html">
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/sweetener.jpg" alt="Sweetener" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../html/discography pages/dangerouswoman.html">
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/dangerous woman album.jpg" alt="Dangerous Woman" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../html/discography pages/myeverything.html">
+                    <div class="vinyl">
+                        <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                        <div class="vinyl-img">
+                            <img src="../ficheiros/my everything album.jpg" alt="My everything" class="vinyl-overlay">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../html/discography pages/yourstruly.html">
+                <div class="vinyl">
+                    <img src="../ficheiros/vinil2.png" alt="vinyl" class="vinyl-background">
+                    <div class="vinyl-img">
+                        <img src="../ficheiros/yours truly.jpg" alt="Yours Truly" class="vinyl-overlay">
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="follow-me">
+            <a href="https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR?si=f5cae1f7da2c4156" target="_blank">
+                <img src="../ficheiros/spotify black.svg" alt="spotify logo">
+            </a>
+            
+            <a href="https://music.apple.com/us/artist/ariana-grande/412778295" target="_blank">
+                <img src="../ficheiros/apple-music black.svg" alt="apple music logo">
+            </a>
+
+            <a href="https://www.youtube.com/@ArianaGrande" target="_blank">
+                <img src="../ficheiros/youtube black.svg" alt="youtube logo">
+            </a>
+
+            <a href="https://www.instagram.com/arianagrande/?hl=pt" target="_blank">
+                <img src="../ficheiros/insta black.svg" alt="instagram logo">
+            </a>
+
+            <a href="https://www.facebook.com/arianagrande/?locale=pt_PT" target="_blank">
+                <img src="../ficheiros/facebook black.svg" alt="facebook logo">
+            </a>
+
+            <a href="https://www.tiktok.com/@arianagrande" target="_blank">
+                <img src="../ficheiros/tiktok black.svg" alt="tiktok logo">
+            </a>
+        </div>
+    </footer>
+
+<script>
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > lastScrollTop) {
+            document.querySelector('header').classList.add('hidden');
+        } else {
+            document.querySelector('header').classList.remove('hidden');
+        }
+        lastScrollTop = st;
+    });
+</script>
+
+</body>
+</html>

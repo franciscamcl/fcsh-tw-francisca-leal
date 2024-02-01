@@ -1,0 +1,135 @@
+header {
+    background-color: #C82828;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-50px); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../ficheiros/papel.jpg');
+    background-size:cover;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fbfbfb;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color:#ded0ba;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  padding: 10px;
+  padding-right: 10px;
+  }
+
+  .vinyl-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+padding: 20px;
+margin-top: 20px;
+}
+
+.vinyl {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 35px;
+    position: relative;
+    transition: transform 3s ease-in;
+}
+
+.vinyl:hover {
+    transform: rotate(360deg); 
+}
+
+.vinyl-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.vinyl-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    height: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.vinyl-overlay {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+}
+
+.eternal-sunshine  {
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    background-color: #C82828;
+}
+
+.footer {
+    text-align: center;
+    position:static;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer img {
+    height: 25px;
+    margin: 10px;
+}
